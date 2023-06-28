@@ -35,6 +35,10 @@ body {
     }
 }
 
+.roselogo {
+    margin-bottom: 5px;
+}
+
 /* SQUARES */
 .square {
     background-color: #D9D9D9;
