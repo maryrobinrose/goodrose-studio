@@ -2,7 +2,8 @@
 
 /* BODY */
 body {
-    font-family: 'Arial Narrow', Arial, sans-serif
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: red;
   }
 
   h1 {
