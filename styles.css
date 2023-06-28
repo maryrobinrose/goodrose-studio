@@ -2,7 +2,11 @@
 
 /* BODY */
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif
+  }
+
+  h1 {
+    font-size: 128px;
   }
 
 /* MARQUEE */
