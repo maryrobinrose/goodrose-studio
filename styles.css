@@ -1,5 +1,11 @@
 /* Custom styles */
 
+/* BODY */
+* {
+    font-family: Arial, sans-serif;
+  }
+
+/* MARQUEE */
 .marquee {
     animation: marquee 10s infinite linear;
     font-size: 80px;
