@@ -57,9 +57,10 @@ body {
     padding: 10px;
 }
 
-#draggable {
-    touch-action: none;
-    user-select: none;
-    position: relative;
+.draggable {
+    /* touch-action: none;
+    user-select: none; */
+    position: absolute;
     z-index: 2;
+    cursor: move;
 }
