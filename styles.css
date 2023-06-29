@@ -5,6 +5,9 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
