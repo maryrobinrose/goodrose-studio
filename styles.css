@@ -19,6 +19,7 @@ body {
 .marquee-container {
     display: flex;
     overflow: hidden;
+    border-bottom: 2px solid black;
 }
 
 .marquee {
@@ -42,13 +43,6 @@ body {
     100% {
         transform: translateX(-100%);
     }
-}
-
-/* LINE */
-hr {
-    border: none;
-    height: 10px;
-    background-color: red;
 }
 
 /* LOGOS */
