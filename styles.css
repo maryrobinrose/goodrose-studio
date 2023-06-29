@@ -24,7 +24,10 @@ body {
     margin-bottom: 35px;
     text-decoration: none;
     white-space: nowrap;
-    width: 100%;
+    min-width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-shrink: 0;
 }
 
 @keyframes marquee {
