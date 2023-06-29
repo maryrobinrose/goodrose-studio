@@ -44,6 +44,11 @@ body {
     }
 }
 
+/* LINE */
+hr {
+    height: 10px;
+}
+
 /* LOGOS */
 .roselogo {
     margin-bottom: 30px;
