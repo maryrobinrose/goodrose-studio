@@ -17,6 +17,16 @@ body {
 
 /* MARQUEE */
 .marquee {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+}
+
+
+/* .marquee {
     animation: marquee 10s infinite linear;
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 48px;
@@ -28,9 +38,12 @@ body {
     justify-content: space-around;
     display: flex;
     flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
 }
+*/
 
-@keyframes marquee {
+@keyframes scroll {
     0% {
         transform: translateX(0);
     }
