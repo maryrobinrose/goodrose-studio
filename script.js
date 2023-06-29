@@ -1,5 +1,5 @@
 // Get all div elements with the specified ID
-var divs = document.querySelectorAll("[id^='mydiv']");
+var divs = document.querySelectorAll("[id^='dragme']");
 
 // Make each DIV element draggable
 divs.forEach(function(elmnt) {
