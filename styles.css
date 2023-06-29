@@ -57,10 +57,18 @@ body {
     padding: 10px;
 }
 
-.draggable {
+#draggable {
     /* touch-action: none;
     user-select: none; */
     position: absolute;
     z-index: 2;
     cursor: move;
+}
+
+#draggableheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
 }
