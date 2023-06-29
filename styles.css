@@ -46,7 +46,9 @@ body {
 
 /* LINE */
 hr {
+    border: none;
     height: 10px;
+    background-color: red;
 }
 
 /* LOGOS */
