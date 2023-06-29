@@ -1,39 +1,43 @@
- // Get all draggable div elements
- var draggableDivs = document.querySelectorAll('draggable');
+// Make the DIV element draggable:
+dragElement(document.getElementById("dragme"));
 
- // Variables to store the starting position of the div
- var startX, startY;
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
 
- // Function to handle the mousedown event
- function startDrag(e) {
-   // Store the starting position of the div
-   startX = e.clientX - this.offsetLeft;
-   startY = e.clientY - this.offsetTop;
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
 
-   // Attach event listeners for mousemove and mouseup events
-   document.addEventListener('mousemove', dragDiv);
-   document.addEventListener('mouseup', stopDrag);
- }
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
 
- // Function to handle the mousemove event
- function dragDiv(e) {
-   // Calculate the new position of the div
-   var newPosX = e.clientX - startX;
-   var newPosY = e.clientY - startY;
-
-   // Set the new position of the div
-   this.style.left = newPosX + 'px';
-   this.style.top = newPosY + 'px';
- }
-
- // Function to handle the mouseup event
- function stopDrag() {
-   // Remove event listeners for mousemove and mouseup events
-   document.removeEventListener('mousemove', dragDiv);
-   document.removeEventListener('mouseup', stopDrag);
- }
-
- // Attach event listeners for mousedown event on each draggable div
- draggableDivs.forEach(function(div) {
-   div.addEventListener('mousedown', startDrag);
- });
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
