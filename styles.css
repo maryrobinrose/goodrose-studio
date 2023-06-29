@@ -16,6 +16,11 @@ body {
   }
 
 /* MARQUEE */
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+}
+
 .marquee {
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 48px;
@@ -24,7 +29,7 @@ body {
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
-    max-width: 100%;
+    min-width: 100%;
     white-space: nowrap;
     animation: marquee 20s linear infinite;
     overflow: hidden;
