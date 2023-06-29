@@ -23,6 +23,7 @@ body {
     margin-bottom: 35px;
     text-decoration: none;
     white-space: nowrap;
+    width: 100%;
 }
 
 @keyframes marquee {
@@ -32,6 +33,10 @@ body {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.divider {
+    width: 2px;
 }
 
 /* LOGOS */
