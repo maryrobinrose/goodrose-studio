@@ -3,6 +3,7 @@
 /* BODY */
 body {
     height: 100%;
+    width: 100%;
     font-family: 'Arial Narrow', Arial, sans-serif;
   }
 
@@ -23,7 +24,6 @@ body {
     margin-bottom: 35px;
     text-decoration: none;
     white-space: nowrap;
-    width: 100%;
 }
 
 @keyframes marquee {
