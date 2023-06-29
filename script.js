@@ -1,5 +1,5 @@
  // Get all draggable div elements
- var draggableDivs = document.querySelectorAll('.draggable');
+ var draggableDivs = document.querySelectorAll('draggable');
 
  // Variables to store the starting position of the div
  var startX, startY;
@@ -37,4 +37,3 @@
  draggableDivs.forEach(function(div) {
    div.addEventListener('mousedown', startDrag);
  });
- 
