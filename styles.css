@@ -60,3 +60,12 @@ body {
     width: 300px;
     height: 200px;
 }
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
