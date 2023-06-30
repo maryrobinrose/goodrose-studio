@@ -1,4 +1,4 @@
-var draggableElement = document.querySelector('.draggable-element');
+var draggableElement = document.querySelector('.draggable');
 var isDragging = false;
 var offsetX, offsetY;
 
