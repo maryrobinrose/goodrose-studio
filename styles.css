@@ -21,8 +21,8 @@ ul {
     margin-bottom: 20px;
 }
 
-.row-margin {
-    margin-bottom: 10px;
+.col-margin {
+    margin-bottom: 20px;
 }
 
 /* MARQUEE */
@@ -68,6 +68,7 @@ ul {
     cursor: move;
     width: 300px;
     height: 200px;
+    position: absolute;
 }
 
 /* FOOTER */
