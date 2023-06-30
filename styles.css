@@ -120,10 +120,6 @@ ul {
     object-fit: cover;
 }
 
-.box img:hover {
-    opacity: 0.5;
-}
-
 .box p {
     font-size: 24px;
     text-align: center;
@@ -144,12 +140,13 @@ ul {
     transition: .5s ease;
     background-color: #008CBA;
   }
+
+  .box img:hover .overlay {
+    opacity: 0.5;
+}
   
-  .box:hover .overlay {
-    opacity: 1;
-  }
   
-  .text {
+.text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -159,7 +156,7 @@ ul {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
 
 
