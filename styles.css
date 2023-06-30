@@ -15,10 +15,6 @@ ul {
     list-style-type: none;
 }
 
-.container {
-    margin-top: 20px;
-}
-
 /* MARQUEE */
 .marquee-container {
     display: flex;
