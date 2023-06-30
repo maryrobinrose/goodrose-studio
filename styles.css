@@ -145,7 +145,7 @@ ul {
     background-color: #008CBA;
   }
   
-  .container:hover .overlay {
+  .box:hover .overlay {
     opacity: 1;
   }
   
