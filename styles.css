@@ -144,13 +144,19 @@ ul {
     margin-bottom: 20px;
 }
 
-
 .mobile {
     display: none;
 }
 
 @media (max-width: 390px) {
+
     .mobile {
         display: block;
     }
+
+    h1 {
+        font-size: 100px;
+    }
+
+
 }
