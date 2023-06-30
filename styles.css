@@ -58,7 +58,6 @@ ul {
     cursor: move;
     width: 300px;
     height: 200px;
-    position: relative;
 }
 
 /* FOOTER */
@@ -67,5 +66,4 @@ ul {
     right: 0;
     bottom: 0;
     text-align: center;
-    margin-bottom: 10px;
 }
