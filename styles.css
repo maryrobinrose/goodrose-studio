@@ -21,6 +21,10 @@ ul {
     margin-bottom: 20px;
 }
 
+.row-margin {
+    margin-bottom: 10px;
+}
+
 /* MARQUEE */
 .marquee-container {
     display: flex;
@@ -63,7 +67,7 @@ ul {
     padding: 10px;
     cursor: move;
     width: 300px;
-    height: 100px;
+    height: 200px;
 }
 
 /* FOOTER */
