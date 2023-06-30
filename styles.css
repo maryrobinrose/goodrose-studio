@@ -92,6 +92,7 @@ ul {
 /* PROJECTS */
 .title-flip {
     transform: scaleY(-1);
+    margin-top: 10px;
 }
 
 .box {
