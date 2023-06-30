@@ -150,6 +150,10 @@ ul {
 
 @media (max-width: 390px) {
 
+    .not-mobile {
+        display: none;
+    }
+
     .mobile {
         display: block;
     }
