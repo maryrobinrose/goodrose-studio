@@ -9,6 +9,7 @@ body {
 
 h1 {
     font-size: 128px;
+    font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 ul {
@@ -30,8 +31,8 @@ ul {
 .marquee {
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 48px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
