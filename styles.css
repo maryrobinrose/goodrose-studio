@@ -89,6 +89,11 @@ ul {
     margin-left: 20px
 }
 
+/* PROJECTS */
+.title-flip {
+    transform: scaleY(-1);
+}
+
 /* FOOTER */
 .footer {
     left: 0;
