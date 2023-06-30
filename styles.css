@@ -14,8 +14,6 @@ body {
 
 h1 {
     font-size: 128px;
-    position: relative;
-    z-index: 2;
 }
 
 ul {
