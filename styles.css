@@ -7,13 +7,17 @@ body {
     font-family: 'Arial Narrow', Arial, sans-serif;
   }
 
-  h1 {
+h1 {
     font-size: 128px;
-  }
+}
 
-  ul {
+ul {
     list-style-type: none;
-  }
+}
+
+.container {
+    margin-top: 20px;
+}
 
 /* MARQUEE */
 .marquee-container {
