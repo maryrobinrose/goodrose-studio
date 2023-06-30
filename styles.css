@@ -75,6 +75,16 @@ ul {
     /* position: absolute; */
 }
 
+.title {
+    font-size: 24px;
+    margin-left: 20px
+}
+
+.description {
+    font-size: 16px;
+    margin-left: 20px
+}
+
 /* FOOTER */
 .footer {
     left: 0;
