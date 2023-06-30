@@ -92,7 +92,7 @@ ul {
 /* PROJECTS */
 .title-flip {
     transform: scaleY(-1);
-    margin-top: 10px;
+    margin-top: -20px;
 }
 
 .box {
@@ -128,20 +128,6 @@ ul {
     font-size: 24px;
     text-align: center;
     margin: 0;
-}
-
-.hover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and transparency as needed */
-    padding: 10px;
-}
-  
-.hover-container:hover .hover-text {
-    display: block;
 }
 
 /* FOOTER */
