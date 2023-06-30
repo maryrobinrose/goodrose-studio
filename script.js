@@ -1,25 +1,22 @@
 var draggableElement = document.querySelector('.draggable');
-var isDragging = false;
 var offsetX, offsetY;
 
-draggableElement.addEventListener('mousedown', function(event) {
-  isDragging = true;
+draggableElement.addEventListener('dragstart', function(event) {
   offsetX = event.offsetX;
   offsetY = event.offsetY;
 });
 
-document.addEventListener('mousemove', function(event) {
-  if (isDragging) {
-    var x = event.clientX - offsetX;
-    var y = event.clientY - offsetY;
-    draggableElement.style.left = x + 'px';
-    draggableElement.style.top = y + 'px';
-  }
+document.addEventListener('dragover', function(event) {
+  event.preventDefault();
 });
 
-document.addEventListener('mouseup', function() {
-  isDragging = false;
+document.addEventListener('drop', function(event) {
+  event.preventDefault();
+  var x = event.clientX - offsetX;
+  var y = event.clientY - offsetY;
+  draggableElement.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
 });
+
 
 
 
