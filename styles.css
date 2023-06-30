@@ -18,6 +18,7 @@ h1 {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .container {
@@ -79,6 +80,7 @@ ul {
 
 .title {
     font-size: 24px;
+    margin-top: 10px;
     margin-left: 20px
 }
 
