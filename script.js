@@ -1,4 +1,4 @@
-var draggableElement = document.querySelector('.draggablet');
+var draggableElement = document.querySelector('.draggable-element');
 var isDragging = false;
 var offsetX, offsetY;
 
@@ -12,13 +12,15 @@ document.addEventListener('mousemove', function(event) {
   if (isDragging) {
     var x = event.clientX - offsetX;
     var y = event.clientY - offsetY;
-    draggableElement.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+    draggableElement.style.left = x + 'px';
+    draggableElement.style.top = y + 'px';
   }
 });
 
 document.addEventListener('mouseup', function() {
   isDragging = false;
 });
+
 
 
 
