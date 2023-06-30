@@ -108,8 +108,16 @@ ul {
 }
 
 .box img:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
+
+.hover-text {
+    display: none;
+  }
+  
+  .hover-container:hover .hover-text {
+    display: block;
+  }
 
 /* FOOTER */
 .footer {
