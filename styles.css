@@ -111,13 +111,19 @@ ul {
     opacity: 0.5;
 }
 
+.box p {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
 .hover-text {
     display: none;
   }
   
-  .hover-container:hover .hover-text {
+.hover-container:hover .hover-text {
     display: block;
-  }
+}
 
 /* FOOTER */
 .footer {
