@@ -108,6 +108,10 @@ ul {
     object-fit: cover;
 }
 
+.box img:hover {
+    opacity: 1;
+}
+
 /* FOOTER */
 .footer {
     left: 0;
