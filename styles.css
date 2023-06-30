@@ -64,10 +64,10 @@ ul {
 }
 
 /* DRAGABLE */
-.draggable {
+/* .draggable {
     cursor: move;
     position: fixed;
-}
+} */
 
 /* SQUARES */
 .squares {
